@@ -1,0 +1,11 @@
+# if list is to be input by the user
+
+List1 = []
+n = int(input("Enter the list size : "))
+for i in range(0, n):
+    print("Enter number at location", i, ":")
+    item = int(input())
+    List1.append(item)
+print("List1=",List1)
+list_pos=[i for i in List1 if i>=0]
+print("positive numbers in the list: ",list_pos)
