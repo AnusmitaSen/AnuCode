@@ -1,0 +1,18 @@
+all_freq={}
+def most_frequent(a):
+    for i in a:
+        if i in all_freq:
+            all_freq[i]+=1
+            
+
+        else:
+            all_freq[i]=1
+    
+    b=sorted(all_freq.items(),key=lambda x:x[1], reverse=True)
+    c=dict(b)
+    for key, value in c.items():
+        print(key, ' : ', value)
+    
+    
+word=input("please enter a string:")
+most_frequent(word)
